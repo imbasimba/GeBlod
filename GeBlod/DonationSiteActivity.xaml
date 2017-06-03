@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GeBlod.DonationSiteActivity">
-    
-    <ListView ItemsSource="{Binding DonationSites}" Refreshing="ListView_OnRefreshing">
+             x:Class="GeBlod.DonationSiteActivity"
+             xmlns:viewModels="clr-namespace:GeBlod.ViewModels;assembly=GeBlod">
+    <ContentPage.BindingContext>
+        <viewModels:DonationSiteActivityViewModel />
+    </ContentPage.BindingContext>
+
+    <ListView ItemsSource="{Binding DonationSites}" >
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
