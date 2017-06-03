@@ -24,9 +24,8 @@ namespace GeBlod.ViewModels
             var schemeResponse = JsonConvert.DeserializeObject<SchemeResponse>(response);
             foreach (var donationSite in schemeResponse.Data)
             {
-                //DonationSites.Add(donationSite);
+                DonationSites.Add(donationSite);
             }
-            DonationSites = new ObservableCollection<DonationSite>(schemeResponse.Data);
         }
     }
 }

@@ -7,7 +7,7 @@ namespace GeBlod
         {
             InitializeComponent();
 
-            MainPage = new DonationSiteActivity();
+            MainPage = new DonationSiteControl();
         }
 
         protected override void OnStart()

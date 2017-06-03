@@ -1,9 +1,9 @@
 ﻿
 namespace GeBlod
 {
-    public partial class DonationSiteActivity
+    public partial class DonationSiteControl
     {
-        public DonationSiteActivity()
+        public DonationSiteControl()
         {
             InitializeComponent();
         }
